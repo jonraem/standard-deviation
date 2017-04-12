@@ -4,7 +4,7 @@ export const arrayAverage = (arr) => arr.reduce((acc, val) => acc + val, 0) / ar
 // differences of array values
 export const differences = (arr) => arr.map(x => x - arrayAverage(arr)).map(x => x * x);
 
-// i.e. average difference
+// variance i.e. average difference
 export const variance = (arr) => arrayAverage(differences(arr));
 
 // standard deviation of array values
